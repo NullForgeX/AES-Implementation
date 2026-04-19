@@ -2,6 +2,8 @@
 
 This repository contains our Python implementation of AES-128 for a computer security assignment. The project covers both encryption and decryption for a single 16-byte block and includes tests using standard AES test data.
 
+This is an educational implementation intended to demonstrate how AES works internally. It is not designed for production security use.
+
 ## Group Members
 
 | Name | ID |

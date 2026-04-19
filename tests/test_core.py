@@ -23,6 +23,16 @@ class TestCore(unittest.TestCase):
         with self.assertRaises(ValueError):
             encrypt_block(plaintext, b"short")
 
+    def test_invalid_ciphertext_length(self):
+        key = bytes.fromhex("000102030405060708090a0b0c0d0e0f")
+        with self.assertRaises(ValueError):
+            decrypt_block(b"short", key)
+
+    def test_invalid_key_length_for_decryption(self):
+        ciphertext = bytes.fromhex("69c4e0d86a7b0430d8cdb78070b4c55a")
+        with self.assertRaises(ValueError):
+            decrypt_block(ciphertext, b"short")
+
 
 if __name__ == "__main__":
     unittest.main()

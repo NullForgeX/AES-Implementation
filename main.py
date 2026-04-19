@@ -13,7 +13,7 @@ def print_usage():
 def main():
     if len(sys.argv) != 4:
         print_usage()
-        return
+        return 1
 
     mode = sys.argv[1].lower()
     data_hex = sys.argv[2]
@@ -36,9 +36,13 @@ def main():
             print("Plaintext:", bytes_to_hex(result))
         else:
             print("Mode must be 'encrypt' or 'decrypt'")
+            return 1
     except ValueError as error:
         print("Error:", error)
+        return 1
+
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
