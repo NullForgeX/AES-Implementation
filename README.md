@@ -1,6 +1,15 @@
 # AES-128 Implementation in Python
 
-This repository contains my Python implementation of AES-128 for a computer security assignment. The project covers both encryption and decryption for a single 16-byte block and includes tests using standard AES test data.
+This repository contains our Python implementation of AES-128 for a computer security assignment. The project covers both encryption and decryption for a single 16-byte block and includes tests using standard AES test data.
+
+## Group Members
+
+| Name | ID |
+| --- | --- |
+| Nathanael Cheramlak | UGR/1349/15 |
+| Yidida Abera | UGR/4753/15 |
+| Lisanegebriel Abay | UGR/5516/15 |
+| Naomi Zerfu | UGR/5767/15 |
 
 ## What this project includes
 
